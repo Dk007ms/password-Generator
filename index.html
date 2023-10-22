@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Guy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="inner-containers1">
+                <h2>
+                    Password Generator
+                </h2>
+            </div>
+            <div class="inner-containers2">
+               <input readonly placeholder="Password will appear here" value="" class="password-display">
+                <button type="button" class="copy-to-clip-btn">
+                   <span class="copy_msg"></span>
+                   <img src="assets/document-copy.png" alt="copy" class="copy-icon">
+                   <img src="assets/tick.png" alt="copied" class="copied-icon">
+                </button>
+            </div>
+            <div class="inner-containers3">
+                <div class="final-inner-container1">
+                    <h3>
+                        Password Length
+                    </h3>
+
+                    <div class="value">
+                        0
+                    </div>
+
+                </div>
+
+
+                <!-- slider -->
+                <input type="range" min="0" max="20" value="0"  id="range" class="slider final-inner-container2">
+                
+                
+
+                <div class="final-inner-container3">
+
+                    <div class="checkbox-container-1">
+                        <input type="checkbox" name="Uppercase" id="Uppercase"  class="myCheckbox" checked>
+                         <label class="label form-control"  for="Uppercase">Include Uppercase Letters</label>
+                    </div>
+                    <div class="checkbox-container-2">
+                        <input type="checkbox" name="Lowercase" id="Lowercase"  class="myCheckbox" checked>
+                        <label class="label" for="Lowercase">Include Lowercase Letters</label>
+                    </div>
+                    <div class="checkbox-container-3">
+                        <input type="checkbox" name="Numbers" id="Numbers"  class="myCheckbox">
+                        <label class="label" for="Numbers">Include Numbers</label>
+                    </div>
+                    <div class="checkbox-container-4">
+                        <input type="checkbox" name="Symbols" id="Symbols"  class="myCheckbox" checked>
+                        <label class="label" for="Symbols">Include Symbols</label>
+                    </div>
+                    
+                </div>
+                <div class="final-inner-container4">
+                    <h3>
+                        Strength
+                    </h3>
+
+                    <div class="strength-col">
+                        <!-- color div in circle form telling strength of password -->
+                    </div>
+                </div>
+            </div>
+            <div class="final-inner-container5">
+                <button class="submitbtn" type="submit">
+                    Generate Password
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
